@@ -1,0 +1,35 @@
+header {
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div.header--brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header nav a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.flash {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+}
+
+.flash--notice {
+  background-color: #e6fffa;
+  border: 1px solid #b2f5ea;
+  color: #319795;
+}
+
+.flash--alert {
+  background-color: #fff5f5;
+  border: 1px solid #feb2b2;
+  color: #c53030;
+}

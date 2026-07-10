@@ -1,0 +1,13 @@
+<% if post.errors.any? %>
+  <ul>
+    <% post.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_with(model: post, scope: :post, url: post.new_record? ? "/posts" : "/posts/#{post.id}") do |form| %>
+  <%= form.label :title %>:
+  <%= form.text_field :title, placeholder: "Title" %><br>
+  <%= form.text_area :body, placeholder: "Body" %><br>
+  <%= form.submit %>
+<% end %>
